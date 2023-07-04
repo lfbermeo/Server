@@ -1,0 +1,30 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/venv": true,
+    "**/.mypy_cache": true
+  },
+  "python.formatting.autopep8Args": ["--max-line-length=120"],
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintArgs": [
+    "--max-line-length",
+    "120",
+    "--disable",
+    "missing-module-docstring",
+    "--no-docstring-rgx",
+    ""
+  ],
+  "python.linting.mypyEnabled": true,
+  "python.linting.mypyArgs": [
+    "--ignore-missing-imports",
+    "--follow-imports=silent",
+    "--show-column-numbers",
+    "--allow-untyped-defs",
+    "--allow-subclassing-any",
+    "--allow-untyped-calls",
+    "--strict"
+  ]
+}
